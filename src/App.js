@@ -1,23 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import FontPanel from "./components/FontPanel";
+import { Helmet } from "react-helmet";
+import data from "./data/FontNameArray.json";
 
 function App() {
+  const [text, setText] = useState("");
+  const [fonts, setFonts] = useState(
+    [...data].sort(() => Math.random() - 0.5).slice(0, 6)
+  );
+
+  console.log(fonts);
+
+  const panels = fonts.map((fontName, index) => (
+    <FontPanel key={index} fontName={fontName} value={text} />
+  ));
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="wrapper">
+      <Helmet>
+        {fonts.map((fontName, index) => (
+          <link
+            key={index}
+            href={`https://fonts.googleapis.com/css?family=${fontName.replaceAll(
+              / /g,
+              "+"
+            )}`}
+            rel="stylesheet"
+          />
+        ))}
+      </Helmet>
+
+      <h1>Your Google Font</h1>
+      <input
+        id="textInput"
+        placeholder="type text ..."
+        value={text}
+        onChange={(e) => setText(e.target.value)}
+      />
+      <div id="panelDiv">{panels}</div>
     </div>
   );
 }

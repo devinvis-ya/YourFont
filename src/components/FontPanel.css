@@ -1,0 +1,27 @@
+.fontPanel {
+  width: 500px;
+  height: 130px;
+
+  padding: 15px;
+
+  border: 2px solid gray;
+  border-radius: 25px;
+
+  cursor: pointer;
+
+  background-color: #f7f7f7;
+}
+
+.fontPanel__text {
+  display: -webkit-box;
+  max-width: 100%;
+  margin: 0 auto;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fontPanel__name {
+    font-size: 18px;
+}
