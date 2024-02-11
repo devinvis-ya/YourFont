@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/YourFont/static/css/main.f2947814.css",
-    "main.js": "/YourFont/static/js/main.5c0f2872.js",
+    "main.js": "/YourFont/static/js/main.d9773881.js",
     "index.html": "/YourFont/index.html",
     "main.f2947814.css.map": "/YourFont/static/css/main.f2947814.css.map",
-    "main.5c0f2872.js.map": "/YourFont/static/js/main.5c0f2872.js.map"
+    "main.d9773881.js.map": "/YourFont/static/js/main.d9773881.js.map"
   },
   "entrypoints": [
     "static/css/main.f2947814.css",
-    "static/js/main.5c0f2872.js"
+    "static/js/main.d9773881.js"
   ]
 }
