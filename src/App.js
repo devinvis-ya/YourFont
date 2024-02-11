@@ -51,7 +51,7 @@ function App() {
 
       <Routes>
         <Route
-          path="/"
+          path="/YourFont"
           element={
             <>
               <div id="main">
@@ -67,7 +67,7 @@ function App() {
             </>
           }
         />
-        <Route path="/font/:fontName" element={<FontPage />} />
+        <Route path="/YourFont/font/:fontName" element={<FontPage />} />
       </Routes>
     </div>
   );
