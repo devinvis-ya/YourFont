@@ -43,7 +43,7 @@ function App() {
         ))}
       </Helmet>
 
-      <Link className="clearLinkStyle" to="/">
+      <Link className="clearLinkStyle" to="/YourFont">
         <h1 id="headFont" style={{ fontFamily: fonts[headFont] }}>
           Your Google Font
         </h1>
