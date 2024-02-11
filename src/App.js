@@ -43,7 +43,7 @@ function App() {
         ))}
       </Helmet>
 
-      <Link className="clearLinkStyle" to="/YourFont">
+      <Link className="clearLinkStyle" to="/">
         <h1 id="headFont" style={{ fontFamily: fonts[headFont] }}>
           Your Google Font
         </h1>
@@ -51,7 +51,7 @@ function App() {
 
       <Routes>
         <Route
-          path="/YourFont"
+          path="/"
           element={
             <>
               <div id="main">
@@ -67,7 +67,7 @@ function App() {
             </>
           }
         />
-        <Route path="/YourFont/font/:fontName" element={<FontPage />} />
+        <Route path="/font/:fontName" element={<FontPage />} />
       </Routes>
     </div>
   );

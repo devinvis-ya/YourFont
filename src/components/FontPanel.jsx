@@ -3,7 +3,7 @@ import "./FontPanel.css";
 
 const FontPanel = ({ fontName, value }) => {
   return (
-    <Link className="clearLinkStyle" to={`/YourFont/font/${fontName}`}>
+    <Link className="clearLinkStyle" to={`/font/${fontName}`}>
       <div className="fontPanel">
         <p className="fontPanel__name">{fontName}</p>
         <p className="fontPanel__text" style={{ fontFamily: fontName }}>
