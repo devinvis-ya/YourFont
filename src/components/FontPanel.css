@@ -1,6 +1,6 @@
 .fontPanel {
   width: 500px;
-  height: 130px;
+  height: 140px;
 
   padding: 15px;
 
@@ -10,12 +10,13 @@
   cursor: pointer;
 
   background-color: #f7f7f7;
+  overflow: hidden;
 }
 
 .fontPanel__text {
   display: -webkit-box;
   max-width: 100%;
-  margin: 0 auto;
+  margin: 10px auto;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;

@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
 import "./App.css";
-import FontPanel from "./components/FontPanel";
 import { Helmet } from "react-helmet";
+import { Routes, Route, Link } from "react-router-dom";
 import data from "./data/FontNameArray.json";
+import MainPanels from "./components/MainPanels";
+import FontPage from "./components/FontPage";
 
 function App() {
   const [headFont, setHeadFont] = useState(0);
@@ -12,12 +14,7 @@ function App() {
     [...data].sort(() => Math.random() - 0.5).slice(0, countPanel)
   );
 
-  const panels = fonts.map((fontName, index) => (
-    <FontPanel key={index} fontName={fontName} value={text} />
-  ));
-
   useEffect(() => {
-    
     const intervalId = setInterval(() => {
       setHeadFont((prevIndex) => (prevIndex + 1) % fonts.length);
     }, 3000);
@@ -46,21 +43,32 @@ function App() {
         ))}
       </Helmet>
 
-      <h1 id="headFont" style={{ fontFamily: fonts[headFont] }}>
-        Your Google Font
-      </h1>
+      <Link className="clearLinkStyle" to="/">
+        <h1 id="headFont" style={{ fontFamily: fonts[headFont] }}>
+          Your Google Font
+        </h1>
+      </Link>
 
-      <div id="main">
-        <input
-          id="textInput"
-          placeholder="Your text ..."
-          value={text}
-          onChange={(e) => setText(e.target.value)}
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <div id="main">
+                <input
+                  id="textInput"
+                  placeholder="Your text ..."
+                  value={text}
+                  onChange={(e) => setText(e.target.value)}
+                />
+                <button onClick={() => updateFonts()}>New Fonts</button>
+              </div>
+              <MainPanels text={text} fonts={fonts} />
+            </>
+          }
         />
-        <button onClick={() => updateFonts()}>New Fonts</button>
-      </div>
-
-      <div id="panelDiv">{panels}</div>
+        <Route path="/font/:fontName" element={<FontPage />} />
+      </Routes>
     </div>
   );
 }
