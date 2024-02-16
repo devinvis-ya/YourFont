@@ -20,7 +20,7 @@ body {
 #headFont {
   font-size: 72px;
   height: 100px;
-  
+
   margin-bottom: 70px;
 }
 
@@ -55,4 +55,42 @@ body {
   font-size: 22px;
 
   border-radius: 25px;
+}
+
+@media only screen and (min-width: 1050px) and (max-width: 1550px) {
+  #main {
+    width: 70%;
+  }
+
+  #headFont {
+    font-size: 48px;
+    height: 90px;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 1049px) {
+  #main {
+    width: 80%;
+    height: 40px;
+
+    gap: 20px;
+  }
+
+  #headFont {
+    font-size: 32px;
+    height: 80px;
+    margin-bottom: 30px;
+  }
+
+  #textInput {
+    min-width: 200px;
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  #main > button {
+    font-size: 12px;
+    padding: 0 5px;
+  }
 }

@@ -26,3 +26,35 @@
 .fontPanel__name {
     font-size: 18px;
 }
+
+@media only screen and (min-width: 1050px) and (max-width: 1550px) {
+    .fontPanel{
+        height: 120px;
+      }
+
+      .fontPanel__text{
+        font-size: 20px;
+        margin: 5px auto;
+      }
+
+      .fontPanel__name{
+        font-size: 16px;
+      }
+  }
+  
+  @media only screen and (max-width: 1049px) {
+      .fontPanel{
+        width: 350px;
+        height: 100px;
+        padding: 10px;
+      }
+
+      .fontPanel__text{
+        font-size: 16px;
+        margin: 5px auto;
+      }
+
+      .fontPanel__name{
+        font-size: 14px;
+      }
+  }
