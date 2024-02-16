@@ -70,6 +70,10 @@ body {
 }
 
 @media only screen and (max-width: 1049px) {
+
+  #wrapper {
+    margin-top: 30px;
+  }
   #main {
     width: 80%;
     height: 40px;
@@ -79,8 +83,8 @@ body {
 
   #headFont {
     font-size: 32px;
-    height: 80px;
-    margin-bottom: 30px;
+    height: 60px;
+    margin-bottom: 15px;
   }
 
   #textInput {
