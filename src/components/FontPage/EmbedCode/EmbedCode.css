@@ -35,14 +35,13 @@
 }
 
 .copySVG:hover {
-    border: 1px solid rgba(116, 116, 116, 0.492);
-    border-radius: 3px;
+  border: 1px solid rgba(116, 116, 116, 0.492);
+  border-radius: 3px;
 }
 
-
 .copySVG:active {
-    border: 1px solid rgba(116, 116, 116, 1);
-    border-radius: 3px;
+  border: 1px solid rgba(116, 116, 116, 1);
+  border-radius: 3px;
 }
 
 .copySVG_icon {
