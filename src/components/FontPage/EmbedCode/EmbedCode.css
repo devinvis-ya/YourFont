@@ -1,0 +1,51 @@
+#embed {
+  margin-top: 15px;
+}
+
+#embed > p {
+  font-size: 20px;
+}
+
+.embedBlock > p:first-child {
+  font-size: 16px;
+
+  margin-top: 15px;
+}
+
+.code {
+  position: relative;
+  background-color: #eaf0f9;
+  border-radius: 8px;
+  padding: 8px 16px;
+  margin-top: 5px;
+
+  font-size: 14px;
+  line-height: 18px;
+
+  white-space: pre-wrap;
+  overflow: auto;
+
+  font-family: "Google Sans Mono";
+}
+
+.copySVG {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.copySVG:hover {
+    border: 1px solid rgba(116, 116, 116, 0.492);
+    border-radius: 3px;
+}
+
+
+.copySVG:active {
+    border: 1px solid rgba(116, 116, 116, 1);
+    border-radius: 3px;
+}
+
+.copySVG_icon {
+  width: 20px;
+  height: 20px;
+}

@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 import { Routes, Route, Link } from "react-router-dom";
 import data from "./data/FontNameArray.json";
 import MainPanels from "./components/MainPanels";
-import FontPage from "./components/FontPage";
+import FontPage from "./components/FontPage/FontPage";
 
 function App() {
   const [headFont, setHeadFont] = useState(0);

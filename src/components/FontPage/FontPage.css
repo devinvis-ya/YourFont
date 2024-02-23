@@ -1,0 +1,36 @@
+#fontPage {
+  width: 60%;
+  border: 1px solid black;
+  border-radius: 25px;
+}
+
+#fontPage__main {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+#font_example {
+  border: 1px solid black;
+  border-radius: 18px;
+
+  padding: 10px;
+  margin-top: 10px;
+}
+
+#main__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#downloadButton{
+    font-size: 18px;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 18px;
+}
+
+#downloadButton:hover{
+    background-color: rgba(192, 192, 194, 0.504);
+    cursor: pointer;
+}
