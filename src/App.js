@@ -61,7 +61,7 @@ function App() {
                   value={text}
                   onChange={(e) => setText(e.target.value)}
                 />
-                <button onClick={() => updateFonts()}>New Fonts</button>
+                <button id="newFontButton" onClick={() => updateFonts()}>New Fonts</button>
               </div>
               <MainPanels text={text} fonts={fonts} />
             </>
