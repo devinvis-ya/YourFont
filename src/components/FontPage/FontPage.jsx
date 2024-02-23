@@ -15,29 +15,38 @@ const FontPage = () => {
           )}`}
           rel="stylesheet"
         />
-        
+
         <link
           href={`https://fonts.googleapis.com/css?family=Google+Sans+Mono`}
           rel="stylesheet"
         />
       </Helmet>
       <div id="fontPage__main">
-        <div id="main__header">
-          <p> {fontName}</p>
-          <div id="downloadButton">Download Family</div>
+        <div id="main__header" className="noselect">
+          <p>{fontName}</p>
+          <a
+            id="googleButton"
+            className="clearLinkStyle"
+            target="_blank"
+            href={`https://fonts.google.com/specimen/${fontName.replaceAll(
+              / /g,
+              "+"
+            )}`}
+          >
+            See on Google
+          </a>
         </div>
         <div id="font_example">
           <p
             style={{ fontFamily: fontName }}
           >{`A B C D E F G H I J K L M N O P Q R S T U V W X Y Z a b c d e f g h i j k l m n o p q r s t u v w x y z`}</p>
-          <p
-            style={{ fontFamily: fontName }}>
+          <p style={{ fontFamily: fontName }}>
             {`0 1 2 3 4 5 6 7 8 9 ! @ # $ % ^ & * ( ) _ - + = [ ] { } | ; : ' " , . < > ? /`}
           </p>
         </div>
-        
-        <hr style={{marginTop: 20}}/>
-        <EmbedCode fontName={fontName}/>
+
+        <hr style={{ marginTop: 20 }} />
+        <EmbedCode fontName={fontName} />
       </div>
     </div>
   );

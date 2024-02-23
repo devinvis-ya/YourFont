@@ -31,6 +31,8 @@ function App() {
   return (
     <div id="wrapper">
       <Helmet>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         {fonts.map((fontName, index) => (
           <link
             key={index}
@@ -61,7 +63,9 @@ function App() {
                   value={text}
                   onChange={(e) => setText(e.target.value)}
                 />
-                <button id="newFontButton" onClick={() => updateFonts()}>New Fonts</button>
+                <button id="newFontButton" onClick={() => updateFonts()}>
+                  New Fonts
+                </button>
               </div>
               <MainPanels text={text} fonts={fonts} />
             </>

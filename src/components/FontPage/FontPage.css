@@ -1,5 +1,6 @@
 #fontPage {
   width: 60%;
+  max-width: 1100px;
   border: 1px solid black;
   border-radius: 25px;
 }
@@ -23,14 +24,37 @@
   justify-content: space-between;
 }
 
-#downloadButton{
-    font-size: 18px;
-    padding: 5px 10px;
-    border: 1px solid black;
-    border-radius: 18px;
+#googleButton {
+  font-size: 18px;
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 18px;
+
 }
 
-#downloadButton:hover{
-    background-color: rgba(192, 192, 194, 0.504);
-    cursor: pointer;
+#googleButton:hover {
+  cursor: pointer;
+}
+
+#googleButton:active {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  }
+
+@media only screen and (max-width: 1049px) {
+  #fontPage {
+    width: 95%;
+  }
+  #font_example{
+    font-size: 14px;
+  }
+
+  #main__header > p{
+    font-size: 18px;
+  }
+
+  #downloadButton{
+    font-size: 14px;
+  }
+
+  
 }
