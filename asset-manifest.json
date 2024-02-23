@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/YourFont/static/css/main.02824518.css",
-    "main.js": "/YourFont/static/js/main.db11fba8.js",
+    "main.css": "/YourFont/static/css/main.7d4fce68.css",
+    "main.js": "/YourFont/static/js/main.2476a89d.js",
     "index.html": "/YourFont/index.html",
     "static/media/copy.svg": "/YourFont/static/media/copy.e35eb1b192ef4ac74455c4a1deb372d7.svg",
-    "main.02824518.css.map": "/YourFont/static/css/main.02824518.css.map",
-    "main.db11fba8.js.map": "/YourFont/static/js/main.db11fba8.js.map"
+    "main.7d4fce68.css.map": "/YourFont/static/css/main.7d4fce68.css.map",
+    "main.2476a89d.js.map": "/YourFont/static/js/main.2476a89d.js.map"
   },
   "entrypoints": [
-    "static/css/main.02824518.css",
-    "static/js/main.db11fba8.js"
+    "static/css/main.7d4fce68.css",
+    "static/js/main.2476a89d.js"
   ]
 }
